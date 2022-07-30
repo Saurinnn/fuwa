@@ -6,3 +6,12 @@ body.home .news-items {
     z-index: 15;
     letter-spacing: -.40em;
 }
+
+element.style {
+    width: 100000px;
+    transform: translateX(1920px);
+    animation: 22.5375s linear 1s infinite normal none running marqueeAnimation-8103733;
+}
+div{
+    display: block;
+}
