@@ -121,19 +121,18 @@ body{
     height: 43%;
     position: absolute;
     top: 40%;
-    left: 40%;
+    left: 15%;
     z-index: 10;
 }
 .top-left img{
-    width: 40%;
+    width: 100%;
 }
 .top-center{
-    /*width: 5%;
-    height: 50%;*/
+    width: 50%;
+    height: 50%;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateY(-50%) translateX(-50%);
+    top: 30%;
+    left: 35%;
     z-index: 1;
     animation-name: neko;
     animation-timing-function: ease-in-out;
@@ -142,7 +141,7 @@ body{
     animation-duration: 1.5s;
 }
 .top-center img{
-    width: 40%;
+    width: 60%;
 }
 @keyframes neko {
     0% {
@@ -158,10 +157,10 @@ body{
     height: 43%;
     position: absolute;
     top: 40%;
-    right: 10%;
+    right: 15%;
     z-index: 10;
 }
 .top-right img{
-    width: 40%;
+    width: 100%;
 }
 
