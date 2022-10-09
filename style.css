@@ -115,7 +115,9 @@ body{
 
 
 /*トップ画像*/
-
+.top{
+  height: 700px;
+}
 .top-left{
     width: 30%;
     height: 43%;
@@ -162,5 +164,82 @@ body{
 }
 .top-right img{
     width: 100%;
+}
+
+/*メニューボタン*/
+.menu{
+  margin: 0 auto;
+  width: 900px;
+  display: flex;
+}
+.menu-button{
+  display: flex;
+  justify-content: center;
+  width: 350px;
+  height: 50px; 
+  background-color: #fff;
+  border-radius: 9%;
+  margin: 0 50px;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 50px;
+}.menu-button p{
+
+}
+.menu-button img{
+  width: 40px;
+  height: 40px;
+  margin:5px 0 0 0;
+}
+
+/*----スマホ画面-----*/
+@media screen and (max-width: 480px) {
+  .top{
+    height: 220px;
+  }
+  .top-left{
+    width: 30%;
+    height: 43%;
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    z-index: 10;
+}
+.top-left img{
+    width: 100%;
+}
+.top-center{
+    width: 50%;
+    
+    position: absolute;
+    top: 15%;
+    left: 35%;
+    z-index: 1;
+}
+.top-center img{
+    width: 60%;
+}
+.top-right{
+    width: 30%;
+    
+    position: absolute;
+    top: 20%;
+    right: 15%;
+    z-index: 10;
+}
+.top-right img{
+    width: 100%;
+}
+
+/*メニュー*/
+.menu{
+  width: 100%;
+  display: block;
+}
+.menu-button{
+  width: 95%;
+  margin: 10px auto;
+}
+
 }
 
