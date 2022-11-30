@@ -197,6 +197,7 @@ body{
   font-weight: bold;
   font-size: 25px;
   line-height: 50px;
+  opacity: 0;
   transition-duration: 0.5s;
   transition-property: opacity, transform;
 }
@@ -210,7 +211,7 @@ body{
 }
 
 .is-scrollIn {
-  opacity: 1;
+  opacity: 1 !important;
   transform: translate(0, -50px);
 }
 /*テキスト*/
@@ -223,11 +224,9 @@ body{
   margin: 0 auto;
   width: 700px;
   }
-.sectxt{
-  display: block;
-}  
 
 .fadein{
+  opacity: 0;
   transition-duration: 0.5s;
   transition-property: opacity, transform;
 
