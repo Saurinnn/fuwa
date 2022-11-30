@@ -201,16 +201,12 @@ body{
   transition-property: opacity, transform;
 }
 .menu-button p{
-  transition-duration: 0.5s;
-  transition-property: opacity, transform;
 }
 
 .menu-button img{
   width: 40px;
   height: 40px;
   margin:5px 0 0 0;
-  transition-duration: 0.5s;
-  transition-property: opacity, transform;
 }
 
 .is-scrollIn {
@@ -236,6 +232,15 @@ body{
   transition-property: opacity, transform;
 
 }  
+/*フッター*/
+footer{
+  background-color: gray;
+  color: #fff;
+  padding: 30px 30px;
+}
+footer h6{
+  text-align: center;
+}
 
 /*----スマホ画面-----*/
 @media screen and (max-width: 480px) {
@@ -284,8 +289,6 @@ body{
 
 /*カバー*/
 .cover{
-  /*position: relative;
-  min-height: 100vh;*/
   background-image: url(img/sky01.jpg);
   background-size: cover;
   color: #fff;
@@ -311,6 +314,6 @@ width: 100%;
 width: 80%;
 margin: 0 auto;
 }
-/*.sectxt{
-  display: none;
-}*/
+iframe{
+  width: 80%;
+}
