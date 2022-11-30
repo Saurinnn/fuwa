@@ -109,14 +109,14 @@ body{
   99%,to { transform: translate(-100%);}
 }
 /*コンテンツ*/
-.content{
+/*.content{
     width: 100%;
-}
+}*/
 
 
 /*トップ画像*/
 .top{
-  height: 700px;
+  height: 900px;
 }
 .top-left{
     width: 30%;
@@ -151,7 +151,7 @@ body{
     }
 
     100% {
-        transform: translate(0,-20px)
+        transform: translate(0,-120px)
     }
   }
 .top-right{
@@ -166,31 +166,76 @@ body{
     width: 100%;
 }
 
+/*カバー*/
+.cover{
+  position: relative;
+  min-height: 100vh;
+  background-image: url(img/sky01.jpg);
+  background-size: cover;
+  color: #fff;
+}
+
 /*メニューボタン*/
 .menu{
   margin: 0 auto;
   width: 900px;
+  height: auto;
   display: flex;
-}
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 50px;
+  }
+
 .menu-button{
   display: flex;
   justify-content: center;
-  width: 350px;
-  height: 50px; 
+  width: 35%;
+  height: 50px;
   background-color: #fff;
   border-radius: 10px;
-  margin: 0 50px;
+  margin: 5px 50px;
   font-weight: bold;
   font-size: 25px;
   line-height: 50px;
-}.menu-button p{
-
+  transition-duration: 0.5s;
+  transition-property: opacity, transform;
 }
+.menu-button p{
+  transition-duration: 0.5s;
+  transition-property: opacity, transform;
+}
+
 .menu-button img{
   width: 40px;
   height: 40px;
   margin:5px 0 0 0;
+  transition-duration: 0.5s;
+  transition-property: opacity, transform;
 }
+
+.is-scrollIn {
+  opacity: 1;
+  transform: translate(0, -50px);
+}
+/*テキスト*/
+.textspace{
+  margin: 0 auto;
+  padding: 50px 10px;
+  width: 900px;
+}
+.text{
+  margin: 0 auto;
+  width: 700px;
+  }
+.sectxt{
+  display: block;
+}  
+
+.fadein{
+  transition-duration: 0.5s;
+  transition-property: opacity, transform;
+
+}  
 
 /*----スマホ画面-----*/
 @media screen and (max-width: 480px) {
@@ -227,6 +272,24 @@ body{
 .top-right img{
     width: 100%;
 }
+@keyframes neko {
+  0% {
+      transform: translate(0,0px);
+  }
+
+  100% {
+      transform: translate(0,-30px)
+  }
+}
+
+/*カバー*/
+.cover{
+  /*position: relative;
+  min-height: 100vh;*/
+  background-image: url(img/sky01.jpg);
+  background-size: cover;
+  color: #fff;
+}
 
 /*メニュー*/
 .menu{
@@ -240,3 +303,14 @@ body{
 
 }
 
+/*テキスト*/
+.textspace{
+width: 100%;
+}
+.text{
+width: 80%;
+margin: 0 auto;
+}
+/*.sectxt{
+  display: none;
+}*/
