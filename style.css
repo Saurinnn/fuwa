@@ -183,7 +183,6 @@ body{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-top: 50px;
   }
 
 .menu-button{
@@ -196,7 +195,6 @@ body{
   margin: 5px 50px;
   font-weight: bold;
   font-size: 25px;
-  line-height: 50px;
   opacity: 0;
   transition-duration: 0.5s;
   transition-property: opacity, transform;
@@ -207,12 +205,19 @@ body{
 .menu-button img{
   width: 40px;
   height: 40px;
-  margin:5px 0 0 0;
+}
+
+.btn{
+  transform: translate(0, 50px);
+}
+
+.txt{
+  transform: translate(-50px, 0);
 }
 
 .is-scrollIn {
   opacity: 1 !important;
-  transform: translate(0, -50px);
+  transform: translate(0, 0);
 }
 /*テキスト*/
 .textspace{
