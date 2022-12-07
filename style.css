@@ -108,15 +108,10 @@ body{
   from   { transform: translate(0%);}
   99%,to { transform: translate(-100%);}
 }
-/*コンテンツ*/
-/*.content{
-    width: 100%;
-}*/
-
 
 /*トップ画像*/
 .top{
-  height: 900px;
+  height: 800px;
 }
 .top-left{
     width: 30%;
@@ -169,8 +164,10 @@ body{
 /*カバー*/
 .cover{
   position: relative;
-  min-height: 100vh;
+  height: 600px;
+  /*min-height: 100vh;*/
   background-image: url(img/sky01.jpg);
+  background-attachment: fixed;
   background-size: cover;
   color: #fff;
 }
@@ -212,7 +209,7 @@ body{
 }
 
 .txt{
-  transform: translate(-50px, 0);
+  transform: translate(-50px, 0); 
 }
 
 .is-scrollIn {
@@ -295,6 +292,7 @@ footer h6{
 .cover{
   background-image: url(img/sky01.jpg);
   background-size: cover;
+  background-attachment: scroll;
   color: #fff;
 }
 
