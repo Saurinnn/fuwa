@@ -225,9 +225,10 @@ body{
 .text{
   margin: 0 auto;
   width: 700px;
-  }
+}
 
 .fadein{
+  line-height:400%;
   opacity: 0;
   transition-duration: 0.5s;
   transition-property: opacity, transform;
